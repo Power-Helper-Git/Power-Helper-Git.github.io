@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #f5c542;
+}
+
+.subtitle {
+  color: #ccc;
+  margin-top: 8px;
+  font-size: 1.2rem;
+}
+
+.nav {
+  margin-top: 20px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #f5c542;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+.main {
+  background-color: #2a2a2a;
+  padding: 40px 0;
+}
+
+.intro h2 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  color: #dddddd;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #f5c542;
+  color: #1f1f1f;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #ffe680;
+}
+
+.footer {
+  background-color: #141414;
+  padding: 20px 0;
+  text-align: center;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.commands-section {
+  padding: 40px 20px;
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+.category {
+  margin-bottom: 40px;
+}
+
+.category-title {
+  font-size: 1.8rem;
+  color: #f5c542;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #f5c542;
+  padding-bottom: 8px;
+}
+
+.command {
+  background-color: #2a2a2a;
+  margin-bottom: 12px;
+  padding: 16px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+.command:hover {
+  background-color: #333;
+}
+
+.command-name {
+  color: #f5c542;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  user-select: text;
+}
+
+.command-desc {
+  color: #dddddd;
+  margin-top: 6px;
+  font-size: 0.95rem;
+  user-select: text;
+  flex: 1;
+  margin-left: 20px;
+}
+
+@media (max-width: 600px) {
+  .category-title {
+    font-size: 1.5rem;
+  }
+
+  .command-name {
+    font-size: 1rem;
+  }
+
+  .command-desc {
+    font-size: 0.9rem;
+  }
+
+  .command {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .command-desc {
+    margin-left: 0;
+    margin-top: 6px;
+  }
+}
+
+
+.command-info {
+  background: #2a2a2a;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  font-family: monospace;
+  color: #ddd;
+}
+
+
+.command-info .inline-code {
+  background: #444;
+  color: #f5c542;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-family: monospace;
+}
+
+.To-chto {
+  color: #f5c542;
+  font-weight: bold;
+  margin-top: 20px;
+  text-decoration: none;
+  display: inline-block;
+}

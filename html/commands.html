@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Команды Power | Чат-Менеджер</title>
+  <link rel="stylesheet" href="../styles/base_style.css" />
+
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Команды Power | Чат-Менеджер</h1>
+
+    <pre class="command-info">
+Power | Групповой помощник поддерживает работу только в группах и супергруппах.  
+Поддерживаются префиксы <span class="inline-code">. / ! power повер</span>, а также многие команды работают без них.  
+
+Перед использованием бота рекомендуется ознакомиться с <a href="TOU.html" class="To-chto">пользовательским соглашением.</a>   
+
+Если нет информации о пользователе, это значит, что пользователь раньше не взаимодействовал с ботом, либо указан неправильный <span class="inline-code">{user}</span>
+    </pre>
+
+    <pre class="command-info">
+  </div>
+
+  <div class="footer">
+    <p>© 2025-2026 Puxxalwl. Все права защищены.</p>
+  </div>
+
+  <script>
+    function copyCommand(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        console.log("Команда скопирована");
+      }).catch(() => {
+        alert('Ошибка копирования команды ');
+      });
+    }
+  </script>
+</body>
+</html>
